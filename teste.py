@@ -1,7 +1,8 @@
 import streamlit as st 
 
 st.write("Alô mundo")
+st.tittle("Meu programa")
 
-
-st.title('Teste ECMI 2')
-st.write("Tabela")
+nome = st.text_input("Digite o seu nome")
+if nome:
+   st.write(nome.upper())
